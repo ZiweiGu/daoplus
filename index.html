@@ -11,6 +11,31 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
     <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <style>
+      /* Style the button that is used to open and close the collapsible content */
+      .collapsible {
+      
+        cursor: pointer;
+
+      }
+
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active, .collapsible:hover {
+        background-color: #ccc;
+      }
+
+      /* Style the collapsible content. Note: hidden by default */
+      .mycontent {
+        padding: 0 18px;
+        display: none;
+        overflow:auto;
+        color: #ccc;
+
+        /* background-color: #f1f1f1; */
+      }
+
+
+    </style>
   </head>
   <body style="margin: 0; background: #06000e">
     <input type="hidden" id="anPageName" name="page" value="main" />
@@ -38,7 +63,7 @@
               <p class="a-community-of-col rmmono-regular-normal-white-12px">
                 +<br />A COMMUNITY OF <br />COLLABORATIVE INNOVATION
               </p>
-              <p class="apply-to-join-now rmmono-regular-normal-white-12px">APPLY TO JOIN NOW &gt;</p>
+              <a href="https://forms.gle/tFsBVh7EzvLZENjH8" target="_blank"><p class="apply-to-join-now rmmono-regular-normal-white-12px">APPLY TO JOIN NOW &gt;</p></a>
               <div class="nav-items">
                 <div class="about-1 about-2 rmmono-regular-normal-white-12px-3">ABOUT</div>
                 <div class="programs-3 rmmono-regular-normal-white-12px">PROGRAMS</div>
@@ -57,35 +82,47 @@
                 <div class="join-us-2 join-us-3 rmmono-regular-normal-white-12px-3">JOIN US</div>
                 <div class="connect-2 rmmono-regular-normal-white-12px">CONNECT</div>
               </div>
-              <div class="frame-3465215">
+              <div class="frame-3465215" style="overflow: auto;">
                 <article class="content-heading">
                   <div class="collapsed-title">
                     <div class="left-part">
                       <div class="number"><div class="text text-3 rmmono-regular-normal-white-12px">01</div></div>
                       <div class="title"><div class="text-1 text-3 archivo-normal-white-36px">The Mission</div></div>
                     </div>
-                    <img class="frame-3465217" src="img/frame-3465217.svg" alt="Frame 3465217" />
+                    <img class="frame-3465217 collapsible" src="img/frame-3465217.svg" alt="Frame 3465217" />
+                    
+                  </div>
+                  <div class="mycontent sourceserifpro-normal-white-18px">
+                    <p>Our goal is to provide a platform for individuals and organizations to come together and share ideas, resources, and expertise in a transparent and decentralized manner. By leveraging the power of Web3 technologies such as blockchain, we aim to create a self-sustaining ecosystem that empowers individuals to drive innovation and make a positive impact on the world.<br><br>
+
+                      We believe that technology has the potential to transform the world in profound ways, but we also recognize the need to use it responsibly and ethically. We are committed to upholding the highest standards of ethical conduct and ensuring that our platform is used for the greater good of humanity.<br><br>
+                      
+                      Ultimately, our vision is to build a global community of scholars who are united in their commitment to collaboration, innovation, sustainability, and ethical use of technology. Through our collective efforts, we aim to create a brighter future for all.</p>
                   </div>
                 </article>
-                <article class="content-heading">
+                <article class="content-heading to-hide">
                   <div class="collapsed-title">
                     <div class="left-part">
                       <div class="number"><div class="text text-3 rmmono-regular-normal-white-12px">02</div></div>
                       <div class="title"><div class="text-1 text-3 archivo-normal-white-36px">The Community</div></div>
                     </div>
-                    <img class="frame-3465217" src="img/frame-3465217-1.svg" alt="Frame 3465217" />
+                    <img class="frame-3465217 collapsible" src="img/frame-3465217-1.svg" alt="Frame 3465217" />
+                  </div>
+                  <div class="mycontent sourceserifpro-normal-white-18px">
+                   <p> The core foundation of DAO+ is established on a vibrant and varied assembly of people, all of whom possess a shared enthusiasm for blockchain technology and decentralized governance. This community's members enjoy exclusive access to events, workshops, and discussion platforms, enabling them to network with those who share their interests and cultivate meaningful connections within the ecosystem.</p>
                   </div>
                 </article>
-                <article class="content-heading">
+                <article class="content-heading to-hide">
                   <div class="collapsed-title">
                     <div class="left-part">
                       <div class="number"><div class="text text-3 rmmono-regular-normal-white-12px">03</div></div>
                       <div class="title"><div class="text-1 text-3 archivo-normal-white-36px">The Fund</div></div>
                     </div>
-                    <img class="frame-3465217" src="img/frame-3465217-2.svg" alt="Frame 3465217" />
+                    <img class="frame-3465217 collapsible" src="img/frame-3465217-2.svg" alt="Frame 3465217" />
                   </div>
+                  <div class="mycontent sourceserifpro-normal-white-18px">The financial backbone of DAO+ aims to support innovative projects and ventures within the blockchain and broader technology ecosystems. The DAO+ fund is structured as a venture capital (VC) and private equity (PE) fund, which raises money from limited partners (LPs) who share a vision for supporting innovative and impactful projects across different industries and technologies, operating under decentralized management through the community.</div>
                 </article>
-                <article class="content-heading">
+                <article class="content-heading to-hide">
                   <div class="collapsed-title">
                     <div class="left-part">
                       <div class="number"><div class="text text-3 rmmono-regular-normal-white-12px">04</div></div>
@@ -93,10 +130,11 @@
                         <div class="text-1 text-3 archivo-normal-white-36px">The Accelerator</div>
                       </div>
                     </div>
-                    <img class="frame-3465217" src="img/frame-3465217-3.svg" alt="Frame 3465217" />
+                    <img class="frame-3465217 collapsible" src="img/frame-3465217-3.svg" alt="Frame 3465217" />
                   </div>
+                  <div class="mycontent sourceserifpro-normal-white-18px">DAO+ Accelerator is dedicated to supporting and accelerating innovative blockchain-based projects. As a vital part of our ecosystem, the accelerator works closely with the DAO+ Fund, which screens and selects the most promising projects from the proposal pool. (I thought we don’t just focus on web3 projects)</div>
                 </article>
-                <article class="content-heading">
+                <article class="content-heading to-hide">
                   <div class="collapsed-title">
                     <div class="left-part">
                       <div class="number"><div class="text text-3 rmmono-regular-normal-white-12px">05</div></div>
@@ -104,8 +142,9 @@
                         <div class="text-1 text-3 archivo-normal-white-36px">Culture &amp; Value</div>
                       </div>
                     </div>
-                    <img class="frame-3465217" src="img/frame-3465217-4.svg" alt="Frame 3465217" />
+                    <img class="frame-3465217 collapsible" src="img/frame-3465217-4.svg" alt="Frame 3465217" />
                   </div>
+                  <div class="mycontent sourceserifpro-normal-white-18px">At DAO+, we believe that our culture and values are the vital elements contributing to our accomplishments. We strive to cultivate a community that embraces love, transparency, collaboration, inclusivity, and social impact as fundamental principles. Our commitment to these values is reflected in everything we do, from the way we communicate and make decisions to the projects we support and the impact we have on the wider world.</div>
                 </article>
               </div>
               <div class="frame-3465216">
@@ -186,11 +225,11 @@
               <p class="x148-256-available-as-of-march-2023 rmmono-regular-normal-white-12px-2">
                 148 / 256 AVAILABLE<br />AS OF MARCH 2023
               </p>
-              <div class="apply-now rmmono-regular-normal-white-12px">APPLY NOW &gt;</div>
-              <p class="keep-up-to-date-with archivo-normal-white-36px">
+              <a href="https://forms.gle/tFsBVh7EzvLZENjH8" target="_blank"><div class="apply-now rmmono-regular-normal-white-12px">APPLY NOW &gt;</div></a>
+              <!-- <p class="keep-up-to-date-with archivo-normal-white-36px">
                 Keep Up To Date With Our Latest News By Subscribing To Our Regular Newsletter
               </p>
-              <div class="frame-67"><div class="your-email rmmono-regular-normal-white-12px-2">YOUR EMAIL</div></div>
+              <div class="frame-67"><div class="your-email rmmono-regular-normal-white-12px-2">YOUR EMAIL</div></div> -->
             </div>
             <div class="frame-46">
               <div class="frame-60">
@@ -214,13 +253,13 @@
                 </p>
               </div>
             </div>
-            <div class="frame-46-3 frame-46-5"></div>
+            <!-- <div class="frame-46-3 frame-46-5"></div>
             <p class="subscribe-means-1i rmmono-regular-normal-white-12px-2">
               SUBSCRIBE MEANS:<br />1.I WOULD LIKE TO RECEIVE DAO+ NEWSLETTERS. <br />2.I HAVE READ AND ACCEPTED THE
               PRIVACY POLICY
-            </p>
+            </p> -->
           </div>
-          <div class="overlap-group3"><div class="subscribe rmmono-regular-normal-white-12px">SUBSCRIBE &gt;</div></div>
+          <!-- <div class="overlap-group3"><div class="subscribe rmmono-regular-normal-white-12px">SUBSCRIBE &gt;</div></div> -->
           <div class="overlap-group4 rmmono-regular-normal-white-12px">
             <img class="logo-white-1" src="img/logo-white.svg" alt="LOGO White" />
             <div class="frame-46-4 frame-46-5"></div>
@@ -236,13 +275,7 @@
                 >PRIVACY POLICY<br />Cookies POLICY<br />TERMS &amp; CONDITIONs</span
               >
             </p>
-            <div class="navigation-about-e">
-              <span class="rmmono-regular-normal-white-12px">NAVIGATION<br /><br />+<br /></span
-              ><span class="span-1 rmmono-regular-normal-white-12px"
-                >ABOUT<br />EVENTS<br />FUTURESJOIN US<br />CONNECT</span
-              >
-            </div>
-            <p class="apply-to-join-now-1">APPLY TO JOIN NOW &gt;</p>
+
           </div>
         </div>
         <div class="flex-row rmmono-regular-normal-white-12px">
@@ -257,5 +290,97 @@
         </div>
       </div>
     </div>
+
+    <script>
+
+    var coll = document.getElementsByClassName("collapsible");
+    var contents = document.getElementsByClassName("mycontent");
+    var hide = document.getElementsByClassName("to-hide");
+
+      coll[0].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = contents[0];
+
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          for (j = 0; j < hide.length; j++) {
+            hide[j].style.display = "block";
+        }
+        } else {
+          content.style.display = "block";
+          for (j = 0; j < hide.length; j++) {
+            hide[j].style.display = "none";
+        }
+        }
+      });
+    
+      coll[1].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = contents[1];
+
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          for (j = 1; j < hide.length; j++) {
+            hide[j].style.display = "block";
+        }
+        } else {
+          content.style.display = "block";
+          for (j = 1; j < hide.length; j++) {
+            hide[j].style.display = "none";
+        }
+        }
+      });
+
+      coll[2].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = contents[2];
+
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          for (j = 2; j < hide.length; j++) {
+            hide[j].style.display = "block";
+        }
+        } else {
+          content.style.display = "block";
+          for (j = 2; j < hide.length; j++) {
+            hide[j].style.display = "none";
+        }
+        }
+      });
+
+      coll[3].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = contents[3];
+
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          for (j = 3; j < hide.length; j++) {
+            hide[j].style.display = "block";
+        }
+        } else {
+          content.style.display = "block";
+          for (j = 3; j < hide.length; j++) {
+            hide[j].style.display = "none";
+        }
+        }
+      });
+
+      coll[4].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = contents[4];
+
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          for (j = 4; j < hide.length; j++) {
+            hide[j].style.display = "block";
+        }
+        } else {
+          content.style.display = "block";
+          for (j = 4; j < hide.length; j++) {
+            hide[j].style.display = "none";
+        }
+        }
+      });
+    </script>
   </body>
 </html>
