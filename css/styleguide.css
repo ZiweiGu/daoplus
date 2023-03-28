@@ -24,6 +24,14 @@
   font-weight: 400;
 }
 
+.rmmono-regular-normal-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-rm_mono-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
 .archivo-normal-white-36px {
   color: var(--white);
   font-family: var(--font-family-archivo);

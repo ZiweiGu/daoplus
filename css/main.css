@@ -211,7 +211,7 @@
   align-items: flex-start;
   border-color: var(--white-2);
   border-top-style: solid;
-  border-top-width: 1px;
+  border-top-width:0px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -394,7 +394,7 @@
   align-items: flex-start;
   border-color: var(--text);
   border-top-style: solid;
-  border-top-width: 1px;
+  border-top-width: 0px;
   display: flex;
   gap: 5px;
   left: 262px;
